@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the world?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <h2 onclick="window.location = 'index.html'">Where in the world?</h2>
+        </div>
+        <div class="nav-right">
+            <ion-icon name="sunny" id="icon"></ion-icon>
+            <p id="toggle-text">Light</p>
+        </div>
+    </div>
+
+    <div class="search-div">
+        <div class="search-bar">
+            <ion-icon name="search"></ion-icon>
+            <input type="text" placeholder="Search for a country ...">
+        </div>
+        <div class="dropdown">
+            <button class="filter">
+                <span>Filter by region</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+            <div class="dropdown-content"  id="myDropdown">
+                <a href="" id="Africa">Africa</a>
+                <a href="" id="Americas">Americas</a>
+                <a href="" id="Asia">Asia</a>
+                <a href="" id="Europe">Europe</a>
+                <a href="" id="Oceania">Oceania</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
+        <!-- <div class="card">
+            <div class="flag">
+                <img src="germany.png" alt="">
+            </div>
+            <h2>Germany</h2>
+            <div class="country-desc">
+                <p>Population: <span>81770.900</span></p>
+                <p>Region: <span>Europe</span></p>
+                <p>Capital: <span>Berlin</span></p>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
